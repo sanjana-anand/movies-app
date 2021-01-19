@@ -1,0 +1,42 @@
+.Movies {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 25%;
+}
+
+.Filters {
+    margin-left: 20%;
+    padding: 2em 4em;
+    .DateFilter {
+        @media(min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center; 
+        }
+    }
+    label {
+        font-weight: bold;
+        margin: 0.5em;
+    }
+    input {
+        outline: none;
+        margin: 0.5em;
+        border: 1px solid #ccc;
+        background-color: white;
+        font: inherit;
+        padding: 0.5em 1em;
+        box-sizing: border-box;
+        width: 100%;
+        @media(min-width: 768px) {
+           width: auto;
+        }
+        &:focus {
+            outline: none;
+            background-color: #ccc;
+        }
+    }
+
+    .AddButton {
+        text-align: right;
+    }
+}
